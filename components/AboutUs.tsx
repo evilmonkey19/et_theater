@@ -1,17 +1,31 @@
-import { apply } from 'twind';
-
-const span = `font-bold`;
 
 const AboutUs = () => (
-  <div className="flex flex-col pb-20">
-    <h1 className="text-3xl font-bold uppercase">About Us</h1>
-    <p className="text-lg font-light">
-      We are a theater association based in Stockholm, Sweden. We try to bring the <span className={span}>joy</span> of <span className={span}>improv</span> and <span className={span}>theater</span> to <span className={span}>local and international students</span>.
-      Whether you're a <span className={span}>seasoned performer</span> or a <span className={span}>complete novice</span>, our improv sessions offer a supportive environment to explore your creativity, sharpen your acting skills, and <span className={span}>unleash your imagination</span>.
-      We take <span className={span}>pride</span> in our <span className={span}>annual show production</span>, bringing you a <span className={span}>unique</span> and <span className={span}>interactive</span> theatrical experience.
-      We make the <span className={span}>Swedish spex tradition</span> accessible to international students through performances in English, promoting <span className={span}>cultural exchange</span> and creating <span className={span}>memorable experiences</span> for all.
-      Join us at The English Theater Improv Club and discover the <span className={span}>magic</span> of improv, the excitement of live performance, and the <span className={span}>joy</span> of being part of a <span className={span}>vibrant theater community</span>!
-    </p>
+  <div className="bg-black py-8 md:grid grid-cols-7">
+    <div className="col-span-1"></div>
+    <div className="col-span-5 text-gray-50 font-light flex flex-col gap-8">
+      <h1 className="text-6xl text-left font-light">About Us</h1>
+      <div className="md:grid grid-cols-3 gap-8">
+        <div className="flex flex-row gap-4">
+          <img src="/icons/location-marker.svg" alt="Location marker of where we are." className="self-start" />
+          <div className="flex flex-col gap-4 text-lg">
+            <p className="text-balance">Hey there! We're the cool cats from the English Theater Improv Club, chilling out</p>
+            <p className="font-bold">Stockholm, Sweden.</p>
+          </div>
+        </div>
+        <div className="flex flex-row gap-4">
+          <img src="/icons/emoji-happy.svg" alt="A happy emoji like us." className="self-start" />
+          <div className="flex flex-col gap-4 text-lg">
+            <p className="text-balance">Our mission? Simple – spreading the joy of improv and theater to both local and international students.</p>
+          </div>
+        </div>
+        <div className="flex flex-row gap-4">
+          <img src="/icons/sparkles.svg" alt="Sparkles of joy to meet you soon." className="self-start" />
+          <div className="flex flex-col gap-4 text-lg">
+            <p className="text-balance">We throw an <span className="font-bold">annual show</span>. It's unique, it's interactive, and it's so much fun, your laughter might be mistaken for applause.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 );
 

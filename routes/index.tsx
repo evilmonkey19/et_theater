@@ -1,10 +1,10 @@
-import FrontPage from "../components/Frontpage.tsx";
+import Landing from "../components/Landing.tsx";
 import AboutUs from "../components/AboutUs.tsx";
 
 export default function Home() {
   return (
-    <div className="flex flex-col text-white gap-4">
-      <FrontPage />
+    <div>
+      <Landing />
       <AboutUs />
     </div>
   );
