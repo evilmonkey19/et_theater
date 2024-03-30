@@ -12,11 +12,11 @@ const Landing = () => (
           <div className="flex gap-4 text-xl">
             <a href="/" className="relative">
               <img className="w-full" src="/icons/union_green.svg" />
-              <p className="text-[#159288] absolute top-5 left-12 text-2xl font-semibold">Hire us</p>
+              <p className="text-[#159288] hover:bg-[#159288] hover:text-gray-50 absolute top-5 left-12 text-2xl font-semibold w-full">Hire us</p>
             </a>
             <a href="/" className="relative">
               <img className="w-full" src="/icons/union_pink.svg" />
-              <p className="text-[#b961c1] absolute top-5 left-12 text-2xl font-semibold">Join us</p>
+              <p className="text-[#b961c1] hover:text-[#ffce5f] absolute top-5 left-12 text-2xl font-semibold">Join us</p>
             </a>
           </div>
         <div className="col-span-1"></div>

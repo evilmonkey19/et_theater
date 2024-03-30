@@ -1,6 +1,7 @@
+import Carousel from "../islands/Carousel.tsx";
 
 const AboutUs = () => (
-  <div className="bg-black py-8 md:grid grid-cols-7">
+  <div className="bg-black py-16 md:grid grid-cols-7">
     <div className="col-span-1"></div>
     <div className="col-span-5 text-gray-50 font-light flex flex-col gap-8">
       <h1 className="text-6xl text-left font-light">About Us</h1>
@@ -25,6 +26,8 @@ const AboutUs = () => (
           </div>
         </div>
       </div>
+      <h2 className="text-2xl">Look how cute we are 😻</h2>
+      <Carousel />
     </div>
   </div>
 );
