@@ -1,11 +1,11 @@
-import Card from './Card.tsx';
+import Card from '../islands/Card.tsx';
 
 const Events = () => (
   <section className="md:grid grid-cols-7 bg-gray-200 py-16" id="events">
     <div className="col-span-1"></div>
     <div className="col-span-5 flex flex-col gap-4">
       <h1 className="text-4xl">Events</h1>
-      <div className="grid grid-cols-3 gap-8">
+      <div className="flex flex-col md:grid grid-cols-3 gap-8">
         <Card 
           type="event"
           image_path="https://picsum.photos/560"
