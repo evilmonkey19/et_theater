@@ -3,7 +3,7 @@ import Carousel from "../islands/Carousel.tsx";
 const AboutUs = () => (
   <div className="bg-black py-16 md:grid grid-cols-7">
     <div className="col-span-1"></div>
-    <div className="col-span-5 text-gray-50 font-light flex flex-col gap-8">
+    <div className="col-span-5 text-gray-50 font-light flex flex-col gap-8 mx-4 md:mx-0">
       <h1 className="text-6xl text-left font-light">About Us</h1>
       <div className="md:grid grid-cols-3 gap-8">
         <div className="flex flex-row gap-4">

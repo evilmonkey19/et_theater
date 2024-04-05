@@ -3,9 +3,9 @@ import Card from '../islands/Card.tsx';
 const Productions = () => (
   <section className="md:grid grid-cols-7 bg-black py-16 text-gray-50" id="productions">
     <div className="col-span-1"></div>
-    <div className="col-span-5 flex flex-col gap-4">
+    <div className="col-span-5 flex flex-col items-center gap-4 mx-4 md:mx-0">
       <h1 className="text-4xl">Productions</h1>
-      <div className="flex flex-col md:grid grid-cols-3 gap-8">
+      <div className="flex flex-col md:grid grid-cols-2 xl:grid-cols-3 gap-8">
         <Card
           type="production"
           image_path="https://picsum.photos/700"
