@@ -40,6 +40,8 @@ const Card = (props: CardProps) => {
   }, []);
 
   const date_class = `text-md rounded-lg ${type === 'event' ? 'text-primary' : 'text-secondary'}`;
+  const dialog_class = `rounded-md p-4 flex flex-col gap-4 max-w-md 
+  ${type === 'event' ? 'bg-gray-50 text-gray-950' : 'bg-gray-900 text-gray-50'}`;
   const details_close_class = `text-xl p-2 border-2 text-center ${type === 'event' 
     ? 'text-secondary border-secondary hover:bg-secondary hover:text-gray-50' 
     : 'text-primary border-primary hover:bg-primary hover:text-gray-50'}`;
@@ -56,8 +58,8 @@ const Card = (props: CardProps) => {
         <p class="text-sm">{description}</p>
       </div>
       <button ref={showButtonRef} class={details_close_class}>View details</button>
-      <dialog ref={dialogRef} class="p-4 rounded-lg backdrop-blur-xl backdrop:drop-shadow-xl backdrop:backdrop-blur-xl">
-        <div class="text-light text-lg flex flex-col gap-4 max-w-md">
+      <dialog ref={dialogRef} class="p-4 rounded-xl backdrop-blur-xl backdrop:drop-shadow-xl backdrop:backdrop-blur-xl bg-gradient-to-br from-primary to-secondary">
+        <div class={dialog_class}>
           <img src={image_path} alt={title} class="rounded-lg max-w-md"/>
           <h1 class="text-2xl">{title}</h1>
           <div class="flex flex-col gap-2">
